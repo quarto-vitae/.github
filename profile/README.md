@@ -8,8 +8,8 @@ Quarto extensions for writing CVs, résumés, and biographies.
 [quarto-vitae.github.io](https://quarto-vitae.github.io/)
 </div>
 
-Every template here shares the same entry syntax: a listing is a table (written
-by hand, or printed by a code cell) inside a div with a `style`, such as
+Every template here shares the same entry syntax: a listing is a table inside
+a div with a `style`, written either by hand
 
 ```markdown
 ::: {.entries style="detailed"}
@@ -18,6 +18,27 @@ by hand, or printed by a code cell) inside a div with a `style`, such as
 | Ph.D. in Physics | University of Paris | 1891-1895 |
 :::
 ```
+
+or printed by a code cell, tagged with the same `style`:
+
+````markdown
+```{r}
+#| echo: false
+#| vitae:
+#|   style: detailed
+#|   fields:
+#|     what: degree
+#|     with: institution
+#|     when: years
+education |> filter(completed)
+```
+````
+
+The two are equivalent, but the code cell is usually the more useful of the
+pair: your CV data lives in one data frame, and `filter()`, `arrange()` and the
+rest of R, Python or Julia are what turn it into a job-specific CV — one
+`filter(...)` away from a version tailored to a particular application,
+without hand-editing a table.
 
 Because the syntax is shared, switching designs is a one-line change to
 `format:` — the same document renders in whichever of the templates below you
