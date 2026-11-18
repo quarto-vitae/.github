@@ -48,12 +48,17 @@ point it at.
 
 | Template | Design | Install |
 |---|---|---|
+| [**altacv**](https://github.com/quarto-vitae/altacv) | [AltaCV](https://github.com/liantze/AltaCV) by LianTze Lim — a two-colour, icon-driven LaTeX class with a main column and a side column of skill groups. | `quarto use template quarto-vitae/altacv` |
 | [**awesomecv**](https://github.com/quarto-vitae/awesomecv) | [Awesome-CV](https://github.com/posquit0/Awesome-CV) by Byungjin Park — a LaTeX CV with a matching cover letter format. | `quarto use template quarto-vitae/awesomecv` |
+| [**billryan**](https://github.com/quarto-vitae/billryan) | [billryan/resume](https://github.com/billryan/resume) by Bin "Bill" Yuan — an elegant XeLaTeX résumé with a centred header, FontAwesome contact icons and small-caps section rules. | `quarto use template quarto-vitae/billryan` |
 | [**hyndman**](https://github.com/quarto-vitae/hyndman) | The CV style used by [Rob J Hyndman](https://github.com/robjhyndman/CV) — a shaded header box and coloured sans-serif section headings. | `quarto use template quarto-vitae/hyndman` |
+| [**jarocki**](https://github.com/quarto-vitae/jarocki) | [cv](https://github.com/BartoszJarocki/cv) by Bartosz Jarocki — a minimalist, print-friendly single-column HTML CV with a monospace accent. | `quarto use template quarto-vitae/jarocki` |
 | [**latexcv**](https://github.com/quarto-vitae/latexcv) | All seven designs from [jankapunkt/latexcv](https://github.com/jankapunkt/latexcv), from a plain centred résumé to a tinted sidebar — one repo, seven `format:` values. | `quarto use template quarto-vitae/latexcv` |
+| [**luxsleek**](https://github.com/quarto-vitae/luxsleek) | LuxSleek-CV by Andreï V. Kostyrka — a two-column LaTeX CV with a tinted dark sidebar of contacts, languages and skills. | `quarto use template quarto-vitae/luxsleek` |
+| [**sb2nov**](https://github.com/quarto-vitae/sb2nov) | [sb2nov/resume](https://github.com/sb2nov/resume) by Sourabh Bajaj ("Jake's Resume") — a single-column, black-and-white, ATS-friendly résumé. | `quarto use template quarto-vitae/sb2nov` |
 
-Rendering these needs a LaTeX installation (`quarto install tinytex` if you
-have none). Each repository's README covers its YAML options, listing styles,
+All but **jarocki** (plain HTML, nothing extra to install) need a LaTeX
+installation to render (`quarto install tinytex` if you have none). Each repository's README covers its YAML options, listing styles,
 and colour/font customisation in full.
 
 ## Creating a new template
